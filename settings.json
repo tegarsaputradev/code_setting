@@ -1,17 +1,47 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "vim.handleKeys": {
     "<C-d>": false,
-    "C-v": true
+    "C-v": true,
+    "<C-p>": false,
+    "<C-w>": false
   },
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["K"],
+      "commands": [
+        {
+          "command": "editor.action.insertSnippet",
+          "args": {
+            "name": "addBrackets",
+            "snippet": "{$TM_SELECTED_TEXT}"
+          }
+        }
+      ]
     }
   ],
   "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace",
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "editor.wordBasedSuggestions": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["typescript"],
+  "editor.formatOnSave": true,
+  "git.confirmSync": false,
+
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "workbench.colorTheme": "Atom One Dark"
 }
