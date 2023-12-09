@@ -1,5 +1,4 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
   "vim.handleKeys": {
     "<C-d>": false,
     "C-v": true,
@@ -30,6 +29,81 @@
       ]
     }
   ],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["variable.parameter"],
+        "settings": {
+          "fontStyle": "bold underline",
+          "foreground": "#c2c2c2c2"
+        }
+      },
+      {
+        "scope": ["meta.type"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["entity.name.type"],
+        "settings": {
+          "foreground": "#fc86fa"
+        }
+      },
+      {
+        "scope": ["keyword.control"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["keyword.operator.new"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#d6d6d6d6"
+        }
+      },
+      {
+        "scope": ["string"],
+        "settings": {
+          "foreground": "#93faeb"
+        }
+      },
+      {
+        "scope": ["comment", "comment.block.documentation"],
+        "settings": {
+          "foreground": "#80808080"
+        }
+      },
+      {
+        "scope": ["entity.name.function"],
+        "settings": {
+          "foreground": "#93abfa"
+        }
+      },
+      {
+        "scope": ["storage.modifier"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#fceabd"
+        }
+      },
+      {
+        "scope": ["keyword.control.trycatch"],
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#5cab82"
+        }
+      },
+      {
+        "scope": ["support.class"],
+        "settings": {
+          "foreground": "#ddede2",
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
   "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.wordBasedSuggestions": false,
@@ -43,5 +117,7 @@
   "files.exclude": {
     "**/node_modules": true
   },
-  "workbench.colorTheme": "Atom One Dark"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "GitHub Dark"
 }
