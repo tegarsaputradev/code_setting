@@ -1,4 +1,9 @@
 {
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "workbench.iconTheme": "vscode-icons-mac",
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "vim.handleKeys": {
     "<C-d>": false,
     "C-v": true,
@@ -8,10 +13,6 @@
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
-      "after": ["<Esc>"]
-    },
-    {
-      "before": ["k", "k"],
       "after": ["<Esc>"]
     }
   ],
@@ -106,18 +107,9 @@
   },
   "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
-  "editor.wordBasedSuggestions": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.validate": ["typescript"],
-  "editor.formatOnSave": true,
-  "git.confirmSync": false,
+  "editor.wordBasedSuggestions": "off",
 
   "files.exclude": {
     "**/node_modules": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "window.zoomLevel": -1,
-  "workbench.colorTheme": "GitHub Dark"
+  }
 }
